@@ -1,0 +1,18 @@
+3:57 AM 10/10/2015
+
+create table customerdatabase(myid number(6) UNIQUE NOT NULL,
+name varchar2(24) NOT NULL,reg varchar2(13) NOT NULL,
+make varchar2(50) NOT NULL,meter number(6) NOT NULL, fuel varchar2(4), eng varchar2(15) NOT NULL,
+cn1 varchar2(15) NOT NULL, cn2 varchar2(15),visit date);
+
+create table AppointmentRegister(myid number(6) UNIQUE NOT NULL,
+name varchar2(24) NOT NULL,reg varchar2(13) NOT NULL,
+make varchar2(50) NOT NULL,meter number(6) NOT NULL, fuel varchar2(4), eng varchar2(15) NOT NULL,
+cn1 varchar2(15) NOT NULL, cn2 varchar2(15),taken date,forslot varchar2(21) UNIQUE);
+
+create table currentqueue(token number(3) UNIQUE NOT NULL, name varchar2(24) NOT NULL,
+reg varchar2(13) NOT NULL,make varchar2(50) NOT NULL, cn1 varchar2(15) NOT NULL, cn2 varchar2(15));
+
+1.Find Fil.
+2. Contact field search.
+3. Availaible slot 30 min inerval.
